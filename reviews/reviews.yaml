@@ -1,0 +1,11 @@
+apiVersion: apollographql.com/v1alpha1
+kind: Subgraph
+metadata:
+  name: products
+  labels:
+    domain: retail
+spec:
+  endpoint: https://apollosolutions--retail-supergraph.fly.dev/products/graphql
+  schema:
+    oci:
+      reference: localhost:5000/schema/artifact:latest
