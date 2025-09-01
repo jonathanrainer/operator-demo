@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: products
+  name: reviews
   namespace: argocd
 spec:
   project: default
   source:
-    path: products
+    path: reviews
     repoURL: https://github.com/jonathanrainer/operator-demo
     directory:
       include: "*.yaml"
