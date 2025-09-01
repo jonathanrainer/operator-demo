@@ -1,7 +1,7 @@
 apiVersion: apollographql.com/v1alpha1
 kind: Subgraph
 metadata:
-  name: products
+  name: reviews
   labels:
     domain: retail
   namespace: apollo-operator
