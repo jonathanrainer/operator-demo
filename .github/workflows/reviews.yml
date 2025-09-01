@@ -53,6 +53,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./reviews
+          outputs: type=oci
           file: ./reviews/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
