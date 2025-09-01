@@ -8,6 +8,6 @@ metadata:
 spec:
   endpoint: http://reviews
   schema:
-    oci:
+    ociImage:
       reference: ghcr.io/jonathanrainer/reviews:latest
       path: /app/schema.graphql
