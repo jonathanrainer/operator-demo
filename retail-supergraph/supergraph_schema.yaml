@@ -7,4 +7,4 @@ spec:
     - matchLabels:
         domain: retail
   graphRef: operator-test@workshop-prep
-  suspend: true
+  suspend: false
