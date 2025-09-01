@@ -1,0 +1,47 @@
+apiVersion: apollographql.com/v1alpha1
+kind: Subgraph
+metadata:
+  name: products
+  labels:
+    domain: retail
+  namespace: apollo-operator
+spec:
+  endpoint: https://apollosolutions--retail-supergraph.fly.dev/products/graphql
+  schema:
+    sdl: |
+      extend schema
+        @link(
+          url: "https://specs.apollo.dev/federation/v2.10"
+          import: ["@key"]
+        )
+        @link(
+          url: "https://specs.apollo.dev/connect/v0.2"
+          import: ["@connect", "@source"]
+        )
+        # A @source directive defines a shared data source for multiple connectors.
+        @source(
+          name: "ecomm"
+          http: { baseURL: "https://ecommerce.demo-api.apollo.dev/" }
+        )
+        
+        type Product {
+          id: ID!
+          name: String
+          description: String
+        }
+        
+        type Query {
+          products: [Product]
+            # A @connect directive defines the API data source of a GraphQL schema field.
+            @connect(
+              source: "ecomm"
+              http: { GET: "/products" }
+              selection: """
+              $.products {
+                id
+                name
+                description
+              }
+              """
+            )
+      }
