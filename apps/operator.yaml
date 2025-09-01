@@ -11,6 +11,13 @@ spec:
     targetRevision: "*"
     helm:
       releaseName: apollo-operator
+      valuesObject:
+        apiKey:
+          secretName: apollo-api-key
+        config:
+          controllers:
+            supergraph:
+              apiKeySecret: apollo-api-key
   destination:
     server: "https://kubernetes.default.svc"
     namespace: apollo-operator
