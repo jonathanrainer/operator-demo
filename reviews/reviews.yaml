@@ -4,8 +4,9 @@ metadata:
   name: products
   labels:
     domain: retail
+  namespace: apollo-operator
 spec:
-  endpoint: https://apollosolutions--retail-supergraph.fly.dev/products/graphql
+  endpoint: http://reviews
   schema:
     oci:
-      reference: localhost:5000/schema/artifact:latest
+      reference: ghcr.io/jonathanrainer/reviews:latest
