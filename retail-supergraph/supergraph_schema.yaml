@@ -1,0 +1,10 @@
+apiVersion: apollographql.com/v1alpha1
+kind: SupergraphSchema
+metadata:
+  name: retail
+spec:
+  selectors:
+    - matchLabels:
+        domain: retail
+  graphRef: operator-test@workshop-prep
+  suspend: true
