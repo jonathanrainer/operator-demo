@@ -18,8 +18,8 @@ type Review @key(fields: "id") {
   product: Product
 }
 
-type Product @key(fields: "upc") {
-  upc: ID!
+type Product @key(fields: "id") {
+  id: ID!
   reviews: [Review!]
 }
 

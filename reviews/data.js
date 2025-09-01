@@ -7,7 +7,7 @@ export const REVIEWS = [
       id: "user:1"
     },
     product: {
-      upc: "product:1"
+      id: "1"
     }
   },
   {
@@ -18,7 +18,7 @@ export const REVIEWS = [
       id: "user:1"
     },
     product: {
-      upc: "product:2"
+      id: "2"
     }
   },
   {
@@ -29,7 +29,7 @@ export const REVIEWS = [
       id: "user:3"
     },
     product: {
-      upc: "product:3"
+      id: "3"
     }
   },
   {
@@ -40,7 +40,7 @@ export const REVIEWS = [
       id: "user:1"
     },
     product: {
-      upc: "product:4"
+      id: "4"
     }
   },
   {
@@ -51,7 +51,7 @@ export const REVIEWS = [
       id: "user:1"
     },
     product: {
-      upc: "product:5"
+      id: "5"
     }
   },
   {
@@ -62,7 +62,7 @@ export const REVIEWS = [
       id: "user:1"
     },
     product: {
-      upc: "product:1"
+      id: "1"
     }
   },
   {
@@ -73,7 +73,7 @@ export const REVIEWS = [
       id: "user:1"
     },
     product: {
-      upc: "product:2"
+      id: "2"
     }
   },
   {
@@ -84,7 +84,7 @@ export const REVIEWS = [
       id: "user:1"
     },
     product: {
-      upc: "product:3"
+      id: "3"
     }
   }
 ];
