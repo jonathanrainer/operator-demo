@@ -6,7 +6,7 @@ metadata:
     domain: retail
   namespace: apollo-operator
 spec:
-  endpoint: https://apollosolutions--retail-supergraph.fly.dev/products/graphql
+  endpoint: https://ecommerce.demo-api.apollo.dev/products
   schema:
     sdl: |
       extend schema
