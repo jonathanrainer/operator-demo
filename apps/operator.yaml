@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    chart: apollo-operator
-    repoURL: registry-1.docker.io/apollo/operator-chart
+    chart: operator-chart
+    repoURL: registry-1.docker.io/apollograph
     targetRevision: latest
     helm:
       releaseName: apollo-operator
