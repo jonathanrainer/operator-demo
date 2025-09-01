@@ -8,7 +8,6 @@ spec:
   source:
     chart: operator-chart
     repoURL: registry-1.docker.io/apollograph
-    targetRevision: latest
     helm:
       releaseName: apollo-operator
   destination:
