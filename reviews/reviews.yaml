@@ -10,3 +10,4 @@ spec:
   schema:
     oci:
       reference: ghcr.io/jonathanrainer/reviews:latest
+      path: /app/schema.graphql
