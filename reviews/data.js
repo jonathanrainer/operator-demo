@@ -56,7 +56,7 @@ export const REVIEWS = [
   },
   {
     id: "review:6",
-    body: "Decent product",
+    body: "Absolutely cracking product",
     author: "User 1",
     user: {
       id: "user:1"
